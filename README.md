@@ -1,27 +1,3 @@
-# Earth Information Jukebox
-
-NASA Space Apps 2026 · The Earth Information Jukebox  
-Data snapshot taken 13 November 2026 UTC
-
-## Run it
-
-1. Extract `earth-information-jukebox.zip`.
-2. Open `index.html` in Chrome or Edge. Keep the `assets` folder beside it.
-3. Choose a companion and start in Earth Orbit & Lab. Select **Ocean Currents**, then **Play**. Use **Hear this moment** to play the note shown in the telemetry.
-
-The animations, maps, GISTEMP readings and audio synthesis are bundled and run offline. Source links need an internet connection. If a browser restricts local media, run `py -m http.server 8000` in the extracted folder on Windows, or `python3 -m http.server 8000` on macOS or Linux. Open [http://localhost:8000](http://localhost:8000).
-
-The [hosted demo](https://earth-information-jukebox-eco-quest.anaselloussi2006.chatgpt.site/) is private and uses the owner’s ChatGPT sign-in. For a judges’ link, upload `index.html` and `assets/` to the root of a static site configured for judge access. No build step, API key, or Earthdata login is required. The ZIP includes the untouched original in `backup/`. Use only the updated page and its assets for hosting.
-
-## 90-second judges’ demo
-
-| Time | Action | What to point out |
-| --- | --- | --- |
-| 0:00 | Select a companion and open Earth Orbit & Lab. Choose **Ocean Currents** and press **Play**. | These are frames from NASA’s Earth Information Center. The Jukebox measures how much the current pixels change and uses that to set the musical pulse. |
-| 0:20 | Pause, move the slider to a different part of the clip, and press **Hear this moment**. Open **Source and how it becomes music**. | The screen shows frame statistics and the actual note, tempo, filter cutoff, and stereo pan. The displayed model date is approximate. |
-| 0:40 | Choose **Climate Through Time**. On a keyboard, select the year slider and use **Home** for 1880. Press **Hear this moment**. Move to a recent year and listen again. | NASA GISTEMP reports −0.18 °C in 1880 and +1.28 °C in 2024 relative to 1951–1980. A higher anomaly produces a higher note. The January–October 2026 point is a partial mean. |
-| 1:00 | Press **Compare this year in Simulator**, raise CO₂ and watch the modeled warming change. | The NASA reading in the timeline keeps its original value. |
-| 1:15 | Enter the **16-Bit Eco-Quest RPG** and press **E** to open Spark’s renewable grid quest, or use **Quests** to visit Flora and open her GEDI track from the room HUD. | The game links to NASA science, while restoration rewards change the educational scenario and soundtrack. |
 
 ## Verified resource inventory
 
@@ -68,11 +44,3 @@ The original timeline spans 1750–2100. Its gas concentrations are illustrative
 Reef, fish, soil, forest, ice, air stress and biodiversity values are game or scenario indices. Sea-level change is an illustrative response calculated from the warming and ice indices. The toy temperature response is referenced to a nominal pre-industrial input of 280 ppm and has a different reference from GISTEMP. Read the scenario and NASA baseline labels when comparing a year. Before 1880 and after the observation snapshot, the timeline displays scenario values and explains where GISTEMP coverage ends.
 
 The simulator illustrates greenhouse warming, ice reflectivity and the direction of ocean acidification. Coral bleaching can occur during prolonged heat stress. Acidification affects carbonate chemistry and can make it harder for organisms to build shells and skeletons. The Paris temperature goal describes long-term warming above pre-industrial levels. The reef cauldron’s pH target is a game mechanic. Switching modes or completing a quest leaves the NASA source data intact.
-
-## Verification and limits
-
-- Checked all eight companion selections, custom naming, both entry modes, five simulator biome views, grid controls, year bounds, and the intervention toggle.
-- Cross-checked 1880, 2024 and 2025 against the NASA CSV and verified the separate 2026 partial mean. Confirmed that changing simulated CO₂ or restoring an RPG room leaves GISTEMP unchanged.
-- Checked playback, pausing and seeking, mapped note and filter changes on the NASA tracks, mute controls, visible spectrum output, Kharita, and a 390 px layout in Chromium.
-- Verified movement through a room portal, fast travel to all five rooms, spirit interaction, and completion of all five restoration mini-games in Chromium.
-- The production challenge resource list could not be verified. This build uses the official NASA EIC gallery and documented NASA/NSIDC products. OCO-2 and SWOT are field-guide references. No raw OCO-2 or SWOT layer is bundled.
