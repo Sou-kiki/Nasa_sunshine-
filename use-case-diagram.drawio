@@ -1,0 +1,201 @@
+<mxfile host="Electron">
+  <diagram name="Use Case Diagram v3" id="Use-Case-Diagram-v3">
+    <mxGraphModel dx="1138" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1260" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c3" parent="1" style="swimlane;startSize=34;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=16;rounded=1;arcSize=2;" value="Earth Information Jukebox" vertex="1">
+          <mxGeometry height="1430" width="1120" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Choose a lobby / faction" vertex="1">
+          <mxGeometry height="60" width="230" x="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Customize look, hat, pet,&lt;br&gt;name &amp;amp; cheer" vertex="1">
+          <mxGeometry height="60" width="200" x="600" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Personalize buddy" vertex="1">
+          <mxGeometry height="60" width="230" x="370" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="c3" source="c12" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c13" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Customize voice&lt;br&gt;(voice, pitch, speed) + live preview" vertex="1">
+          <mxGeometry height="66" width="220" x="690" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="c3" source="c14" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c12" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Mute / dismiss siren" vertex="1">
+          <mxGeometry height="50" width="170" x="840" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Hear siren &amp;amp; red alert&lt;br&gt;(locked simulator)" vertex="1">
+          <mxGeometry height="60" width="210" x="640" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="c3" source="c19" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c18" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Receive mission briefing&lt;br&gt;from lobby leader" vertex="1">
+          <mxGeometry height="66" width="230" x="330" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" edge="1" parent="c3" source="c17" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c18" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Complete a zone mission" vertex="1">
+          <mxGeometry height="60" width="230" x="70" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Read zone lesson popup&lt;br&gt;(why nature is struggling)" vertex="1">
+          <mxGeometry height="60" width="210" x="380" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" edge="1" parent="c3" source="c23" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c24" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Tap bees / flowers in the meadow" vertex="1">
+          <mxGeometry height="60" width="210" x="640" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" edge="1" parent="c3" source="c32" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c24" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Solve zone puzzle&lt;br&gt;(grid · bee · roots · sorting · pH lab)" vertex="1">
+          <mxGeometry height="66" width="230" x="390" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" edge="1" parent="c3" source="c23" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c25" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Answer field check" vertex="1">
+          <mxGeometry height="55" width="190" x="440" y="573" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" edge="1" parent="c3" source="c23" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c26" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Read Kharita context&lt;br&gt;(&quot;Read for more context&quot;)" vertex="1">
+          <mxGeometry height="66" width="210" x="780" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" edge="1" parent="c3" source="c26" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c27" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Restore zone &amp;amp; heal Earth&lt;br&gt;(shared game ↔ simulator state)" vertex="1">
+          <mxGeometry height="66" width="230" x="410" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" edge="1" parent="c3" source="c34" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c23" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="View locked, critical simulator" vertex="1">
+          <mxGeometry height="60" width="210" x="550" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" parent="c3" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#555555;" value="Legend: yellow = primary use case · red = journey milestone · purple = included / extending use case · blue = science use case. Dashed arrows: «include» (always) and «extend» (optional)." vertex="1">
+          <mxGeometry height="36" width="1000" x="40" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Browse Kharita field guide" vertex="1">
+          <mxGeometry height="55" width="230" x="50" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Listen to NASA observation tracks" vertex="1">
+          <mxGeometry height="60" width="230" x="150" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Explore Happy Earth simulator" vertex="1">
+          <mxGeometry height="60" width="230" x="230" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Read cause &amp;amp; effect&lt;br&gt;(immediate · long-term · why)" vertex="1">
+          <mxGeometry height="66" width="220" x="320" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Adjust CO₂ · CH₄ · O₂ ·&lt;br&gt;temperature · year · grid" vertex="1">
+          <mxGeometry height="66" width="220" x="490" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" edge="1" parent="c3" source="c37" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c38" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" edge="1" parent="c3" source="c38" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=10;" target="c39" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Listen to dialogue (subtitles +&lt;br&gt;voice-over, skip / replay)" vertex="1">
+          <mxGeometry height="66" width="230" x="560" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="c3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Receive congratulations&lt;br&gt;&amp;amp; unlock simulator" vertex="1">
+          <mxGeometry height="66" width="230" x="140" y="782" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Player&lt;br&gt;(student / explorer)" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Screen-reader&lt;br&gt;user" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="c5" style="endArrow=block;endFill=0;endSize=12;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="NASA data snapshot" vertex="1">
+          <mxGeometry height="80" width="40" x="1520" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Browser speech engine&lt;br&gt;(Web Speech API)" vertex="1">
+          <mxGeometry height="80" width="40" x="1490" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Web Audio API" vertex="1">
+          <mxGeometry height="80" width="40" x="1490" y="926" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Read project introduction&lt;br&gt;(Kharita · Game · Simulator)" vertex="1">
+          <mxGeometry height="70" width="230" x="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Navigate: Game · Tasks ·&lt;br&gt;Kharita · Simulator status" vertex="1">
+          <mxGeometry height="66" width="230" x="300" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" edge="1" parent="1" source="c4" style="endArrow=none;html=1;" target="c45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" edge="1" parent="1" source="c7" style="endArrow=none;html=1;" target="c43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" edge="1" parent="1" source="c7" style="endArrow=none;html=1;" target="c44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" edge="1" parent="1" source="c8" style="endArrow=none;html=1;" target="c14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" edge="1" parent="1" source="c8" style="endArrow=none;html=1;" target="c45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" edge="1" parent="1" source="c8" style="endArrow=none;html=1;" target="c17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" edge="1" parent="1" source="c9" style="endArrow=none;html=1;" target="c18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" edge="1" parent="1" source="c9" style="endArrow=none;html=1;" target="c43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
